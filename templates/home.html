@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'style.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-group justify-content-center">
+        <form method="POST" action="/home">
+            <div class="title" >
+                <label for="title">Enter Title</label><br>
+                <input type="text" id="title" name="title">
+            </div>
+            <div class="note">
+                <label for="note">Create note</label><br>
+                <textarea class="form-control" id="note" name="note" rows="5"></textarea>
+            </div>
+            <div class="category">
+                <label for="cat">Enter Category</label><br>
+                <input type="text" id="cat" name="cat">
+            </div>
+            <input type="submit"><br>
+        </form>
+    </div> 
+</body>
+</html>
